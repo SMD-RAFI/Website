@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:.5rem;
+    background-color: #efefef;
+}
+.hero{
+    height:100vh;
+    width:900px;
+    /* max-width:100%; */
+    margin:0 auto;
+    /* background-color: red; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* gaprem; */
+    
+}
+.img{
+    margin:0 .9rem 0 0;
+    /* background-color: wheat; */
+    width:300px;
+    /* height:vh; */
+    height:300px;
+    padding:.2rem;
+
+}
+.img img{
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+}
+.heroinfo{
+    /* max-height: 200px; */
+    width:50%;   
+    /* background-color: green; */
+    text-align: center;
+    
+}
+.heroinfo h1,h2,h3,h4{
+    margin:.5rem 0 .7rem 0;
+}
+.head{
+    display: block;
+    text-align: center;
+    width:900px;
+    margin:0 auto;
+    margin-bottom:.7rem;
+}
+#about{
+    /* height:30vh; */
+    width:900px;
+    /* background-color: green; */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    gap:4rem;
+    padding:.5rem;
+}
+.aimg{
+    height:300px;
+    width:300px;
+    padding:.6rem;
+}
+.aimg img{
+    height:100%;
+    width:100%;
+    border-radius: .5rem;
+}
+.adesc{
+    width:400px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.atop{
+    display: flex;
+    gap:2rem;
+    padding:.4rem;
+}
+.edu,.exp{
+    border-radius:2rem;
+    border:2px solid rgba(33, 31, 31, 0.911);
+    padding:1rem;
+    
+}
+.ski{
+    text-align: center;
+    width:900px;
+    margin:2rem auto .5rem auto;
+}
+#exp{
+    /* background-color: red; */
+    width: 900px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap:1rem;
+    padding:.7rem;
+    text-align: center;
+}
+
+#exp ul li{
+    margin:.4rem  auto .4rem auto;
+    /* background-color: red; */
+    width:100px;
+}
+.prg,.front,.back{
+    border-radius:1.4rem;
+    border:2px solid black;
+    padding:.2rem;
+    margin:.8rem auto .8rem auto;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.prhead{
+    width:900px;
+    margin:0 auto 1rem;
+    /* background-color: red; */
+    text-align: center;
+}
+#projects{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cards{
+    height:350px;
+    width:300px;
+    border:2px solid black;
+    border-radius: 1.5rem;
+    padding:.5rem;
+
+}
+.title{
+    text-align: center;
+}
+.primg{
+    height:150px;
+    width:150px;
+    margin:.5rem auto .5rem auto;
+    padding:.4rem;
+
+}
+.primg img{
+    height:100%;
+    width:100%;
+    border-radius: 1rem;
+}
+.prinfo{
+    text-align: center;
+    margin-top:1rem;
+    /* background-color: green; */
+}
+footer{
+    background-color: rgb(92, 91, 91);
+    color:white;
+    width:900px;
+    margin:2rem auto 0 auto;
+}
+.flinks{
+    width:600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+    padding:.4rem;
+}
+@media (max-width:768px) 
+{
+    .hero{
+        height:900px;
+        margin-top:4rem;
+        flex-direction:column;
+        justify-content: space-evenly;
+        /* gap:.7rem; */
+        margin-bottom:0;
+        font-size: 1.4rem;
+    }
+    .img{
+        height:400px;
+        width:400px;
+    }
+    .heroinfo{
+        text-align: center;
+        padding:1rem;
+    }
+    .heroinfo h1,h2,h3,h4{
+        margin:1rem 0 1rem 0;
+    }
+    .heroinfo:last-child{
+        margin-bottom: 0;
+    }
+    .head{
+        /* margin:1rem 0 0 .5rem; */
+        margin:5rem 0 0 .5rem;
+        font-size: 2rem;
+    }
+    #about{
+        /* background-color: red; */
+
+        padding:1rem;
+        flex-direction: column;
+        gap:2rem;
+    }
+    .aimg{
+        height:400px;
+        width:400px;
+        padding:1rem;
+    
+    }
+    .adesc{
+        width:100%;
+        gap:1rem;
+        font-size: 1.5rem;
+    }
+    .atop{
+        flex-direction: column;
+        text-align: center;
+    }
+    .atop h3{
+        text-align: center;
+    }
+    #exp{
+        text-align: center;
+        display: block;
+    }
+    #projects{
+        flex-direction: column;
+        gap:1rem;
+        width:900px;
+        margin:0 auto;
+    }
+    .cards{
+        width:70%;
+        /* padding:0; */
+        height:80%;
+    }
+}
+
